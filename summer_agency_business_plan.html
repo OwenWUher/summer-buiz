@@ -1,0 +1,260 @@
+
+<style>
+  .plan-wrap { padding: 1.5rem 0; font-family: var(--font-sans); }
+  .section-label { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-secondary); margin: 2rem 0 0.75rem; }
+  .card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; }
+  .metric-card { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 1rem; }
+  .metric-label { font-size: 12px; color: var(--color-text-secondary); margin: 0 0 4px; }
+  .metric-val { font-size: 22px; font-weight: 500; color: var(--color-text-primary); margin: 0; }
+  .metric-sub { font-size: 12px; color: var(--color-text-secondary); margin: 2px 0 0; }
+  .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+  .role-name { font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px; }
+  .role-title { font-size: 12px; color: var(--color-text-secondary); margin: 0 0 12px; }
+  .pill { display: inline-block; font-size: 11px; padding: 3px 10px; border-radius: 20px; margin: 2px 2px 2px 0; font-weight: 500; }
+  .pill-teal { background: #E1F5EE; color: #0F6E56; }
+  .pill-purple { background: #EEEDFE; color: #3C3489; }
+  .pill-amber { background: #FAEEDA; color: #854F0B; }
+  .pill-blue { background: #E6F1FB; color: #0C447C; }
+  .pill-coral { background: #FAECE7; color: #712B13; }
+  .row-item { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; }
+  .row-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; margin-top: 6px; }
+  .row-text { font-size: 13px; color: var(--color-text-secondary); line-height: 1.5; }
+  .pkg-name { font-size: 14px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px; }
+  .pkg-price { font-size: 20px; font-weight: 500; margin: 6px 0 4px; }
+  .pkg-sub { font-size: 11px; color: var(--color-text-secondary); margin: 0 0 12px; }
+  .divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 1.5rem 0; }
+  .stack-row { display: flex; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 0.5px solid var(--color-border-tertiary); }
+  .stack-row:last-child { border-bottom: none; }
+  .stack-icon { width: 28px; height: 28px; border-radius: var(--border-radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .stack-name { font-size: 13px; font-weight: 500; color: var(--color-text-primary); }
+  .stack-desc { font-size: 12px; color: var(--color-text-secondary); }
+  .featured { border: 1.5px solid #185FA5; }
+  .badge-featured { display: inline-block; background: #E6F1FB; color: #0C447C; font-size: 11px; padding: 3px 10px; border-radius: 20px; margin-bottom: 8px; font-weight: 500; }
+  .timeline-row { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .timeline-month { font-size: 11px; font-weight: 500; color: var(--color-text-secondary); min-width: 50px; padding-top: 2px; }
+  .timeline-body { flex: 1; }
+  .timeline-title { font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 3px; }
+  .timeline-detail { font-size: 12px; color: var(--color-text-secondary); margin: 0; }
+  .timeline-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
+</style>
+
+<div class="plan-wrap">
+  <h2 style="sr-only">Summer Agency Business Plan</h2>
+  <div style="display:flex; align-items:center; gap:12px; margin-bottom:0.25rem;">
+    <i class="ti ti-building-store" style="font-size:28px; color:var(--color-text-secondary)" aria-hidden="true"></i>
+    <div>
+      <p style="font-size:20px; font-weight:500; margin:0; color:var(--color-text-primary)">Summer Web Agency</p>
+      <p style="font-size:13px; color:var(--color-text-secondary); margin:0">Owen · Connor · Ryan — Summer 2026</p>
+    </div>
+  </div>
+
+  <p class="section-label">At a glance</p>
+  <div class="grid-4">
+    <div class="metric-card">
+      <p class="metric-label">Target clients</p>
+      <p class="metric-val">Local</p>
+      <p class="metric-sub">Gyms, restaurants, barbershops, coaches</p>
+    </div>
+    <div class="metric-card">
+      <p class="metric-label">Site build price</p>
+      <p class="metric-val">$300–$800</p>
+      <p class="metric-sub">One-time per site</p>
+    </div>
+    <div class="metric-card">
+      <p class="metric-label">Monthly retainer</p>
+      <p class="metric-val">$75–$150</p>
+      <p class="metric-sub">Per client / mo</p>
+    </div>
+    <div class="metric-card">
+      <p class="metric-label">Summer potential</p>
+      <p class="metric-val">$5K–$15K</p>
+      <p class="metric-sub">Realistic range (3 months)</p>
+    </div>
+  </div>
+
+  <p class="section-label">The team</p>
+  <div class="grid-3">
+    <div class="card">
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+        <div style="width:36px;height:36px;border-radius:50%;background:#EEEDFE;display:flex;align-items:center;justify-content:center;font-weight:500;font-size:13px;color:#3C3489;">O</div>
+        <div>
+          <p class="role-name">Owen</p>
+          <p class="role-title">CEO & Tech Lead</p>
+        </div>
+      </div>
+      <div>
+        <span class="pill pill-purple">Claude Code builder</span>
+        <span class="pill pill-purple">GitHub owner</span>
+        <span class="pill pill-purple">Vercel deploys</span>
+        <span class="pill pill-purple">Stripe setup</span>
+        <span class="pill pill-purple">Client comms</span>
+        <span class="pill pill-purple">Quality control</span>
+      </div>
+      <hr class="divider" style="margin:10px 0;">
+      <p style="font-size:12px;color:var(--color-text-secondary);margin:0;">Has Claude Pro + ChatGPT Pro. Runs the business and builds. Final decision-maker on tech and pricing.</p>
+    </div>
+    <div class="card">
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+        <div style="width:36px;height:36px;border-radius:50%;background:#E1F5EE;display:flex;align-items:center;justify-content:center;font-weight:500;font-size:13px;color:#0F6E56;">C</div>
+        <div>
+          <p class="role-name">Connor</p>
+          <p class="role-title">Co-builder & Problem Solver</p>
+        </div>
+      </div>
+      <div>
+        <span class="pill pill-teal">Feature builder</span>
+        <span class="pill pill-teal">Bug fixing</span>
+        <span class="pill pill-teal">Logic/math components</span>
+        <span class="pill pill-teal">Branch reviews</span>
+        <span class="pill pill-teal">Speed boosts</span>
+      </div>
+      <hr class="divider" style="margin:10px 0;">
+      <p style="font-size:12px;color:var(--color-text-secondary);margin:0;">Works on separate GitHub branch. Owns hard technical problems — calculators, forms, animations, edge cases.</p>
+    </div>
+    <div class="card">
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+        <div style="width:36px;height:36px;border-radius:50%;background:#FAEEDA;display:flex;align-items:center;justify-content:center;font-weight:500;font-size:13px;color:#854F0B;">R</div>
+        <div>
+          <p class="role-name">Ryan</p>
+          <p class="role-title">Sales Lead & Content Validator</p>
+        </div>
+      </div>
+      <div>
+        <span class="pill pill-amber">Cold outreach</span>
+        <span class="pill pill-amber">In-person pitches</span>
+        <span class="pill pill-amber">Content accuracy</span>
+        <span class="pill pill-amber">Fitness/health niche</span>
+        <span class="pill pill-amber">Follow-ups</span>
+      </div>
+      <hr class="divider" style="margin:10px 0;">
+      <p style="font-size:12px;color:var(--color-text-secondary);margin:0;">Owns the pipeline. Validates that copy sounds real and professional for health/fitness clients. Gets laptop soon.</p>
+    </div>
+  </div>
+
+  <p class="section-label">Pricing packages</p>
+  <div class="grid-3">
+    <div class="card">
+      <p class="pkg-name">Starter</p>
+      <p class="pkg-price" style="color:#0F6E56;">$300–$400</p>
+      <p class="pkg-sub">+ $75/mo retainer</p>
+      <div class="row-item"><div class="row-dot" style="background:#1D9E75;"></div><p class="row-text">3–4 page site (home, about, services, contact)</p></div>
+      <div class="row-item"><div class="row-dot" style="background:#1D9E75;"></div><p class="row-text">Mobile responsive, Vercel deployed</p></div>
+      <div class="row-item"><div class="row-dot" style="background:#1D9E75;"></div><p class="row-text">Contact form, Google Maps embed</p></div>
+      <div class="row-item"><div class="row-dot" style="background:#1D9E75;"></div><p class="row-text">1 round of revisions</p></div>
+      <div class="row-item"><div class="row-dot" style="background:#1D9E75;"></div><p class="row-text"><em>Best for: barbershops, coaches, solo shops</em></p></div>
+    </div>
+    <div class="card featured">
+      <div><span class="badge-featured">Most popular</span></div>
+      <p class="pkg-name">Growth</p>
+      <p class="pkg-price" style="color:#185FA5;">$500–$650</p>
+      <p class="pkg-sub">+ $100/mo retainer</p>
+      <div class="row-item"><div class="row-dot" style="background:#378ADD;"></div><p class="row-text">5–7 pages including gallery/menu/pricing</p></div>
+      <div class="row-item"><div class="row-dot" style="background:#378ADD;"></div><p class="row-text">Custom branding, animations, SEO basics</p></div>
+      <div class="row-item"><div class="row-dot" style="background:#378ADD;"></div><p class="row-text">Booking link or social integration</p></div>
+      <div class="row-item"><div class="row-dot" style="background:#378ADD;"></div><p class="row-text">2 rounds of revisions</p></div>
+      <div class="row-item"><div class="row-dot" style="background:#378ADD;"></div><p class="row-text"><em>Best for: gyms, restaurants, salons</em></p></div>
+    </div>
+    <div class="card">
+      <p class="pkg-name">Premium</p>
+      <p class="pkg-price" style="color:#854F0B;">$700–$800</p>
+      <p class="pkg-sub">+ $150/mo retainer</p>
+      <div class="row-item"><div class="row-dot" style="background:#BA7517;"></div><p class="row-text">Full custom design, 7+ pages</p></div>
+      <div class="row-item"><div class="row-dot" style="background:#BA7517;"></div><p class="row-text">Online store or class scheduler</p></div>
+      <div class="row-item"><div class="row-dot" style="background:#BA7517;"></div><p class="row-text">Blog/CMS, advanced SEO</p></div>
+      <div class="row-item"><div class="row-dot" style="background:#BA7517;"></div><p class="row-text">Ongoing priority support</p></div>
+      <div class="row-item"><div class="row-dot" style="background:#BA7517;"></div><p class="row-text"><em>Best for: established gyms, multi-location</em></p></div>
+    </div>
+  </div>
+
+  <p class="section-label">How you find clients</p>
+  <div class="grid-2">
+    <div class="card">
+      <p style="font-size:13px;font-weight:500;color:var(--color-text-primary);margin:0 0 10px;"><i class="ti ti-run" aria-hidden="true" style="margin-right:6px;"></i>Ryan's outreach playbook</p>
+      <div class="row-item"><div class="row-dot" style="background:#7F77DD;"></div><p class="row-text">Walk in to local gyms, barbershops, restaurants — show the portfolio on your phone</p></div>
+      <div class="row-item"><div class="row-dot" style="background:#7F77DD;"></div><p class="row-text">DM Instagram accounts with bad or no websites ("we build affordable sites for gyms like yours")</p></div>
+      <div class="row-item"><div class="row-dot" style="background:#7F77DD;"></div><p class="row-text">Google "[city] barbershop no website" — call or email directly</p></div>
+      <div class="row-item"><div class="row-dot" style="background:#7F77DD;"></div><p class="row-text">Post in local Facebook groups for small business owners</p></div>
+      <div class="row-item"><div class="row-dot" style="background:#7F77DD;"></div><p class="row-text">Offer a free audit ("your site is losing you customers — here's why")</p></div>
+    </div>
+    <div class="card">
+      <p style="font-size:13px;font-weight:500;color:var(--color-text-primary);margin:0 0 10px;"><i class="ti ti-target" aria-hidden="true" style="margin-right:6px;"></i>Target signals (who to pitch)</p>
+      <div class="row-item"><div class="row-dot" style="background:#D85A30;"></div><p class="row-text">No website or using a Link-in-bio as their "site"</p></div>
+      <div class="row-item"><div class="row-dot" style="background:#D85A30;"></div><p class="row-text">Outdated site (still says 2019, broken mobile layout)</p></div>
+      <div class="row-item"><div class="row-dot" style="background:#D85A30;"></div><p class="row-text">Good reviews on Google/Yelp but nothing to send people to</p></div>
+      <div class="row-item"><div class="row-dot" style="background:#D85A30;"></div><p class="row-text">Active Instagram but no booking or contact info</p></div>
+      <div class="row-item"><div class="row-dot" style="background:#D85A30;"></div><p class="row-text">New businesses — just opened, getting set up</p></div>
+    </div>
+  </div>
+
+  <p class="section-label">Summer income potential</p>
+  <div class="grid-3">
+    <div class="metric-card">
+      <p class="metric-label"><i class="ti ti-mood-sad" aria-hidden="true" style="margin-right:4px;"></i>Conservative</p>
+      <p class="metric-val">$3,500–$5,000</p>
+      <p class="metric-sub">4–6 builds · 4–5 retainers by end of summer</p>
+    </div>
+    <div class="metric-card" style="border: 1.5px solid #185FA5;">
+      <p class="metric-label"><i class="ti ti-mood-happy" aria-hidden="true" style="margin-right:4px;"></i>Realistic target</p>
+      <p class="metric-val">$7,000–$11,000</p>
+      <p class="metric-sub">8–12 builds · 8–10 retainers · ~3 mo</p>
+    </div>
+    <div class="metric-card">
+      <p class="metric-label"><i class="ti ti-rocket" aria-hidden="true" style="margin-right:4px;"></i>Best case</p>
+      <p class="metric-val">$13,000–$18,000</p>
+      <p class="metric-sub">15+ builds · word-of-mouth kicks in</p>
+    </div>
+  </div>
+  <div class="card" style="margin-top:10px;">
+    <p style="font-size:12px;color:var(--color-text-secondary);margin:0;line-height:1.8;">
+      <strong style="color:var(--color-text-primary);">How retainers compound:</strong> 10 retainer clients at $100/mo = <strong style="color:var(--color-text-primary);">$1,000/mo recurring</strong> — before you build a single new site. That's the real goal: finish summer with a book of retainers that pays into fall/college. 
+      &nbsp;·&nbsp; Split across 3 people, $10K summer gross = ~$3,300 each.
+    </p>
+  </div>
+
+  <p class="section-label">Summer roadmap</p>
+  <div class="card">
+    <div class="timeline-row">
+      <p class="timeline-month">Now</p>
+      <div class="timeline-dot" style="background:#7F77DD;"></div>
+      <div class="timeline-body">
+        <p class="timeline-title">Foundation sprint</p>
+        <p class="timeline-detail">Set up GitHub repo + branching workflow · Build 2–3 portfolio sample sites using Claude Code · Create agency landing page · Get Stripe configured</p>
+      </div>
+    </div>
+    <div class="timeline-row">
+      <p class="timeline-month">Week 2–3</p>
+      <div class="timeline-dot" style="background:#1D9E75;"></div>
+      <div class="timeline-body">
+        <p class="timeline-title">First pitches</p>
+        <p class="timeline-detail">Ryan starts in-person and Instagram outreach · Target 20+ businesses · Aim to land first 2 paying clients · Refine pitch based on objections</p>
+      </div>
+    </div>
+    <div class="timeline-row">
+      <p class="timeline-month">Month 2</p>
+      <div class="timeline-dot" style="background:#BA7517;"></div>
+      <div class="timeline-body">
+        <p class="timeline-title">Build & grow</p>
+        <p class="timeline-detail">Fulfill first clients, collect testimonials · Ryan gets laptop → full pipeline mode · Ask every client for a referral · Target 6–8 total clients</p>
+      </div>
+    </div>
+    <div class="timeline-row" style="margin-bottom:0;">
+      <p class="timeline-month">Month 3</p>
+      <div class="timeline-dot" style="background:#D85A30;"></div>
+      <div class="timeline-body">
+        <p class="timeline-title">Retainer push</p>
+        <p class="timeline-detail">Convert all clients to monthly retainer · Document processes so this can continue during college · Hit income targets · Celebrate</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="section-label">Tech stack</p>
+  <div class="card">
+    <div class="stack-row"><div class="stack-icon" style="background:#EEEDFE;"><i class="ti ti-terminal-2" style="color:#3C3489;font-size:16px;" aria-hidden="true"></i></div><div><p class="stack-name">Claude Code</p><p class="stack-desc">Primary builder — Owen and Connor use this to build and iterate fast</p></div></div>
+    <div class="stack-row"><div class="stack-icon" style="background:#E1F5EE;"><i class="ti ti-brand-github" style="color:#0F6E56;font-size:16px;" aria-hidden="true"></i></div><div><p class="stack-name">GitHub</p><p class="stack-desc">Version control · Owen and Connor each work on separate branches, merge via PR</p></div></div>
+    <div class="stack-row"><div class="stack-icon" style="background:#E6F1FB;"><i class="ti ti-brand-vercel" style="color:#185FA5;font-size:16px;" aria-hidden="true"></i></div><div><p class="stack-name">Vercel</p><p class="stack-desc">One-click deployment · each client site gets its own project</p></div></div>
+    <div class="stack-row"><div class="stack-icon" style="background:#FAEEDA;"><i class="ti ti-currency-dollar" style="color:#854F0B;font-size:16px;" aria-hidden="true"></i></div><div><p class="stack-name">Stripe</p><p class="stack-desc">One-time build payments + recurring monthly retainer billing</p></div></div>
+    <div class="stack-row"><div class="stack-icon" style="background:#F1EFE8;"><i class="ti ti-brand-vscode" style="color:#5F5E5A;font-size:16px;" aria-hidden="true"></i></div><div><p class="stack-name">VS Code</p><p class="stack-desc">Code review, manual edits, and debugging alongside Claude Code</p></div></div>
+  </div>
+</div>
