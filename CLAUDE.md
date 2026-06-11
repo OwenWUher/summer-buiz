@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-Business planning documents for **summer-buiz**, a 3-person web agency building clean websites for local businesses. The team is Owen (CEO & tech lead — builds sites with Claude Code), Connor (co-builder — code review and technical problem solving), and Ryan (sales lead — client pitches and content validation).
+Business planning documents for **Outscope Designs**, a 3-person web agency building clean websites for local businesses. The team is Owen (CEO & tech lead — builds sites with Claude Code), Connor (co-builder — code review and technical problem solving), and Ryan (sales lead — client pitches and content validation).
 
 The repo currently contains a single file (`summer_agency_business_plan.html`) — a self-contained HTML fragment with no build step, no framework, and no dependencies.
 
